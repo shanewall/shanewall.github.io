@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Expert Electrical BIM, Revit detailing, and Navisworks coordination services. Home to free volunteer organization tools including Convention Planner and Assembly Helper.">
+    <meta name="keywords" content="Electrical BIM, Revit modeling, Navisworks clash detection, Trimble point extraction, free convention planner, assembly attendant scheduling, volunteer management">
+    <meta name="author" content="Abarca Services">
+
+    <meta property="og:title" content="Abarca Services | Electrical BIM & Community Tools">
+    <meta property="og:description" content="Expert Electrical BIM and coordination services, plus free volunteer organization tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.abarca-services.com">
+
+    <title>Abarca Services | Electrical BIM & Community Tools</title>
+    
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #1a252f;
+            --secondary: #2c3e50;
+            --accent-pro: #e67e22; /* Orange for BIM/Construction feel */
+            --accent-vol: #27ae60; /* Green for volunteer/free tools */
+            --bg-light: #f4f7f6;
+            --bg-white: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-pro);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        /* Section Layouts */
+        .section {
+            padding: 4rem 1rem;
+        }
+
+        .section-alt {
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+
+        /* Service Cards (BIM) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-pro);
+        }
+
+        .card.vol-card {
+            border-top: 4px solid var(--accent-vol);
+            background: var(--bg-light);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .card p {
+            color: var(--text-muted);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--accent-pro);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-vol {
+            background: var(--accent-vol);
+            display: block;
+            text-align: center;
+        }
+
+        /* Video Tutorials Layout */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #000;
+            margin-top: 1rem;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+
+        /* Footer / Contact */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        footer a {
+            color: var(--accent-pro);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Abarca Services</a>
+            <nav>
+                <a href="#bim-services">BIM Services</a>
+                <a href="#volunteer-tools">Free Tools</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Precision Electrical BIM & Detailing</h1>
+        <p>Providing expert modeling, coordination, and sub-contracting services, while giving back to the community through free organizational tools.</p>
+    </div>
+
+    <section id="bim-services" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Electrical BIM Services</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>3D Modeling & Detailing</h3>
+                    <p>High-LOD Revit modeling for electrical systems including conduit routing, cable tray layouts, and equipment clearances. Optimized for prefabrication and field installation.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Clash Detection & Coordination</h3>
+                    <p>Navisworks coordination to resolve spatial conflicts before they hit the field. Ensuring seamless integration with mechanical, plumbing, and structural trades.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Subcontractor Support</h3>
+                    <p>Acting as a dedicated extension of your team to manage the ACC/BIM 360 ecosystem, model publishing, and extracting precise layout points for Trimble/Total Station.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer-tools" class="section">
+        <div class="container">
+            <h2 class="section-title">Volunteer & Community Tools</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--text-muted);">
+                I develop free, lightweight web applications designed to help coordinate large-scale events and assemblies. These tools are provided 100% free of charge.
+            </p>
+            
+            <div class="grid">
+                <div class="card vol-card">
+                    <h3>Convention Planner</h3>
+                    <p>A comprehensive organizational tool to manage scheduling, manpower, and logistical planning for large-scale events.</p>
+                    <a href="/convention-planner" class="btn btn-vol">Open Convention Planner</a>
+                </div>
+
+                <div class="card vol-card">
+                    <h3>Assembly Helper</h3>
+                    <p>Built on the foundation of the Convention Planner, specifically tailored for assembly environments with dedicated attendant management features.</p>
+                    <a href="/assembly-helper" class="btn btn-vol">Open Assembly Helper</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; color: var(--primary);">Tool Tutorials</h3>
+                <div class="grid">
+                    <div class="card vol-card">
+                        <h4>Convention Planner Basics</h4>
+                        <div class="iframe-container">
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card vol-card">
+                        <h4>Assembly Helper Features</h4>
+                        <div class="iframe-container">
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Ready to discuss your next coordination project?</h2>
+        <p>Email me directly at <a href="mailto:your.email@abarca-services.com">your.email@abarca-services.com</a></p>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: #7f8c8d;">
+            &copy; 2026 Abarca Services.
+        </p>
+    </footer>
+
+</body>
+</html>
