@@ -63,6 +63,15 @@
             font-weight: bold;
             text-decoration: none;
             color: white;
+            display: flex; /* Added to align logo and text */
+            align-items: center; /* Added to vertically center */
+            gap: 12px; /* Added to create space between logo and text */
+        }
+
+        /* Added to control the SVG size */
+        .logo img {
+            height: 40px; 
+            width: auto;
         }
 
         nav a {
@@ -214,7 +223,10 @@
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">Abarca Services</a>
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="Abarca Services Logo">
+                Abarca Services
+            </a>
             <nav>
                 <a href="#bim-services">BIM Services</a>
                 <a href="#volunteer-tools">Free Tools</a>
@@ -306,4 +318,3 @@
 
 </body>
 </html>
-``
