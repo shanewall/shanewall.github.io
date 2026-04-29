@@ -200,6 +200,14 @@
             text-decoration: none;
             font-weight: bold;
         }
+        
+        .footer-emails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
@@ -260,7 +268,7 @@
                 <div class="card vol-card">
                     <h3>Assembly Helper</h3>
                     <p>Built on the foundation of the Convention Planner, specifically tailored for assembly environments with dedicated attendant management features.</p>
-                    <a href="/assembly-helper" class="btn btn-vol">Open Assembly Helper</a>
+                    <a href="https://assembly.abarca-services.com" target="_blank" class="btn btn-vol">Open Assembly Helper</a>
                 </div>
             </div>
 
@@ -287,7 +295,10 @@
 
     <footer id="contact">
         <h2>Ready to discuss your next coordination project?</h2>
-        <p>Email me directly at <a href="mailto:your.email@abarca-services.com">your.email@abarca-services.com</a></p>
+        <div class="footer-emails">
+            <div>For BIM coordination work, email me at <a href="mailto:bim@abarca-services.com">bim@abarca-services.com</a></div>
+            <div>For support with the free tools, email <a href="mailto:dev@abarca-services.com">dev@abarca-services.com</a></div>
+        </div>
         <p style="margin-top: 2rem; font-size: 0.8rem; color: #7f8c8d;">
             &copy; 2026 Abarca Services.
         </p>
